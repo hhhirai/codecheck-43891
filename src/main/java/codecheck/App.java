@@ -1,13 +1,10 @@
 package codecheck;
 
-import java.util.HashMap;
-import java.util.Map;
 
 
 public class App {
 	public static void main(String[] args) {
 
-        Map<Integer,String> in_map = new HashMap<Integer,String>();
         int in_size = args.length-1;
         int m = Integer.parseInt(args[in_size]);
         String out_str = "";
