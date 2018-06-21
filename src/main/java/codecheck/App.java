@@ -11,7 +11,7 @@ public class App {
         int in_size = args.length-1;
         String last = args[in_size];
 
-		for (int i = 0, l = in_size-1; i < l; i++) {
+		for (int i = 0, l = in_size; i < l; i++) {
 
 			String[] data = args[i].split(":");
 			in_map.put(data[0], data[1]);
