@@ -18,16 +18,16 @@ public class App {
 
 			if(m % in_num == 0){
 				out_str += in_str;
-//			}else{
-//				not_div = true;
+			}else{
+				not_div = true;
 			}
 		}
 
-//		if(not_div){
-//			System.out.println(m);
-//		}else{
+		if(not_div){
+			System.out.println(m);
+		}else{
 	        System.out.println(out_str);
-//		}
+		}
 	}
 
 }
