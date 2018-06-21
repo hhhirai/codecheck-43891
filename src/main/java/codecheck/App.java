@@ -11,6 +11,7 @@ public class App {
         int in_size = args.length-1;
         int m = Integer.parseInt(args[in_size]);
         String out_str = "";
+        boolean not_div;
 
 		for (int i = 0, l = in_size; i < l; i++) {
 
@@ -20,9 +21,16 @@ public class App {
 
 			if(m%in_num == 0){
 				out_str += in_str;
+			}else{
+				not_div = true;
 			}
 		}
-        System.out.println(out_str);
+
+		if(not_div){
+			System.out.println(m);
+		}else{
+	        System.out.println(out_str);
+		}
 	}
 
 }
