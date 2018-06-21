@@ -8,7 +8,7 @@ public class App {
         int in_size = args.length-1;
         int m = Integer.parseInt(args[in_size]);
         String out_str = "";
-        boolean not_div;
+        boolean not_div = false;
 
 		for (int i = 0, l = in_size; i < l; i++) {
 
