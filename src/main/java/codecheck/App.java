@@ -1,6 +1,5 @@
 package codecheck;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,20 +10,19 @@ public class App {
         Map<Integer,String> in_map = new HashMap<Integer,String>();
         int in_size = args.length-1;
         int m = Integer.parseInt(args[in_size]);
+        String out_str = "";
 
 		for (int i = 0, l = in_size; i < l; i++) {
 
 			String[] data = args[i].split(":");
-			int key = Integer.parseInt(data[0]);
+			int in_num = Integer.parseInt(data[0]);
+			String in_str = data[1];
 
-			in_map.put(key, data[1]);
+			if(m%in_num == 0){
+				out_str += in_str;
+			}
 		}
-
-		Object[] mapkey = in_map.keySet().toArray();
-        Arrays.sort(mapkey);
-
-        System.out.println(in_map);
-
+        System.out.println(out_str);
 	}
 
 }
