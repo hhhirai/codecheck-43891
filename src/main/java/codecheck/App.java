@@ -16,18 +16,18 @@ public class App {
 			int in_num = Integer.parseInt(data[0]);
 			String in_str = data[1];
 
-			if(m%in_num == 0){
+			if(m % in_num == 0){
 				out_str += in_str;
-			}else{
-				not_div = true;
+//			}else{
+//				not_div = true;
 			}
 		}
 
-		if(not_div){
-			System.out.println(m);
-		}else{
+//		if(not_div){
+//			System.out.println(m);
+//		}else{
 	        System.out.println(out_str);
-		}
+//		}
 	}
 
 }
