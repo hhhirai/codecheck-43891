@@ -1,5 +1,6 @@
 package codecheck;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -7,16 +8,22 @@ import java.util.Map;
 public class App {
 	public static void main(String[] args) {
 
-        Map<String,String> in_map = new HashMap<String,String>();
+        Map<Integer,String> in_map = new HashMap<Integer,String>();
         int in_size = args.length-1;
-        String last = args[in_size];
+        int m = Integer.parseInt(args[in_size]);
 
 		for (int i = 0, l = in_size; i < l; i++) {
 
 			String[] data = args[i].split(":");
-			in_map.put(data[0], data[1]);
+			int key = Integer.parseInt(data[0]);
+
+			in_map.put(key, data[1]);
 		}
-        System.out.println(in_map + ":" + String.valueOf(last));
+
+		Object[] mapkey = in_map.keySet().toArray();
+        Arrays.sort(mapkey);
+
+        System.out.println(in_map);
 
 	}
 
