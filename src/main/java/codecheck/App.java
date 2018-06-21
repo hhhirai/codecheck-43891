@@ -20,7 +20,7 @@ public class App {
 			}
 		}
 
-		if(out_str != ""){
+		if(out_str == ""){
 			System.out.println(m);
 		}else{
 	        System.out.println(out_str);
