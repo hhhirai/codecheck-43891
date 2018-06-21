@@ -8,9 +8,10 @@ public class App {
 	public static void main(String[] args) {
 
         Map<String,String> in_map = new HashMap<String,String>();
-        int last = Integer.parseInt(args[args.length]);
+        int in_size = args.length;
+        String last = args[in_size];
 
-		for (int i = 0, l = args.length-1; i < l; i++) {
+		for (int i = 0, l = in_size-1; i < l; i++) {
 
 			String[] data = args[i].split(":");
 			in_map.put(data[0], data[1]);
